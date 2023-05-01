@@ -1,3 +1,4 @@
+import { log } from 'console'
 import express from 'express'
 import fileUpload from 'express-fileupload'
 import fs from 'fs'
@@ -5,10 +6,12 @@ import path from 'path'
 
 const __dirname = path.resolve()
 
+log(__dirname)
+
 const app = new express()
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'dist/index.html'))
+  res.sendFile(path.resolve(__dirname, 'front/index.html'))
 })
 
 app.post(
