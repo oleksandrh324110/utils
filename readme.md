@@ -1,1 +1,1 @@
-# A place to publish utilities
+# A place to store utilities
